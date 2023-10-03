@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("Ai.jpg");
+        height: 100vh;
+        width: 100%;
+        min-height: 100vh;
+        display: block;
+        overflow: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      /* headers  */
+      .headers {
+        width: 100% !important;
+        position: relative;
+        top: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 80px;
+        background-color: #fff;
+        z-index: 100;
+        box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.1);
+      }
+
+      /* headers  */
+      /* footer style  */
+      .footer-wrapper {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        margin-top: 170px;
+        width: 100%;
+        background-color: #046e7c;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 10px 0px;
+      }
+
+      .footer-wrapper ul {
+        position: relative;
+      }
+      .footer-wrapper ul li {
+        list-style-type: none;
+        margin: 0px 10px;
+        margin-top: 12px;
+        display: inline-block;
+      }
+
+      .footer-wrapper ul li i {
+        color: #ffffff;
+        width: 30px;
+        height: 30px;
+        background: linear-gradient(45deg, #5ffaff93, #71eaff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        font-size: 14px;
+      }
+      .form-container {
+        position: absolute;
+        background-color: rgba(136, 123, 123, 0.562);
+        padding: 40px;
+        border-radius: 4px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .container h1 {
+        text-align: center;
+        color: rgb(255, 255, 255);
+      }
+      .form-label {
+        color: #fff;
+        font-weight: bold;
+      }
+
+      /* footer style  */
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="headers">
+      <div class="">
+        <img
+          src="https://infosense.tech/_next/static/media/logo.d34a12c6.png"
+          style="height: 45px; width: 180px"
+          alt="no-img"
+          loading="lazy"
+          fetchpriority="high"
+        />
+      </div>
+
+      <div style="padding-top: 15px">
+        <p>Contact Us :- +91 - 9343017165</p>
+      </div>
+    </div>
+    <!-- header  -->
+
+    <!-- form -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 form-box">
+          <div class="mt-5">
+            <h1>Bengaluru Property Worth Forecaster</h1>
+          </div>
+          <div class="form-container">
+            <form action="" class="w-100" method="">
+              <div class="mb-3">
+                <label for="" class="form-label">Area (Square feet)</label>
+                <input
+                  type="text"
+                  name=""
+                  placeholder="Enter your Number"
+                  id=""
+                  class="form-control w-100"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="customRange2" class="form-label">BHK</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  min="0"
+                  max="5"
+                  id="customRange2"
+                  value="0"
+                  class="form-control w-100"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="customRange2" class="form-label">Bath</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  min="0"
+                  max="5"
+                  id="customRange2"
+                  value="0"
+                  class="form-control w-100"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="" class="form-label">Location</label>
+                <select
+                  class="form-control w-100"
+                  aria-label="Default select example"
+                >
+                  <option selected>-- please select Location --</option>
+                  <option>Indore</option>
+                  <option>Bhopal</option>
+                  <option>Dewas</option>
+                </select>
+              </div>
+              &nbsp;
+              <div class="mb-3">
+                <button type="submit" id="" class="w-100 btn btn-info">
+                  Estimate Price
+                </button>
+              </div>
+              <div class="mb-3">
+                <h3 class="text-start text-light">Result :-</h3>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- form -->
+
+    <!-- footer  -->
+    <div class="footer-wrapper">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6 col-sm-12 col-md-6">
+            <div class="footer_content text-capitalize">
+              Copyright © InfosenseAI Pvt. Ltd.
+              <script>
+                new Date().getFullYear();
+              </script>
+              All rights reserved
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <ul>
+              <li><i class="fa-brands fa-facebook-f"></i></li>
+              <li><i class="fa-brands fa-linkedin-in"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer  -->
+  </body>
+</html>
